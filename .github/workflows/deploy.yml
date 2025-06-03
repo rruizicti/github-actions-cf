@@ -1,0 +1,15 @@
+#Nombre del workflow
+name: Deploy to server
+
+# Evento que dispara el workflow
+on: push
+
+# Definición de los jobs
+jobs:
+    first-jobs:
+        runs-on: ubuntu-latest
+
+        # Pasos a seguir en el job
+        steps:
+            - name: Hola Mundo
+              run: echo "¡Hola, mundo! Este es un workflow de GitHub Actions."
