@@ -13,3 +13,14 @@ jobs:
         steps:
             - name: Hola Mundo
               run: echo "¡Hola, mundo! Este es un workflow de GitHub Actions."
+
+    second-job:
+        needs: first-jobs  # Este job depende del primero
+        runs-on: ubuntu-latest
+
+        # Pasos a seguir en el job
+        steps:
+            - name: Hola Mundo
+              run: echo "¡Hola, mundo 2!"
+
+            
