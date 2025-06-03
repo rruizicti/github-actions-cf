@@ -15,7 +15,7 @@ jobs:
               run: echo "¡Hola, mundo! Este es un workflow de GitHub Actions."
 
     second-job:
-        if: ${{ github.ref == 'refs/heads/main' }}  # Este job solo se ejecuta si el push es a la rama main
+        if: ${{ github.ref == 'refs/heads/master' }}  # Este job solo se ejecuta si el push es a la rama main
         needs: first-jobs  # Este job depende del primero
         runs-on: ubuntu-latest
 
